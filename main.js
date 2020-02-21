@@ -72,8 +72,8 @@ function searchMovie() {
 
                 $("#movieList").append(
                     `<div class="rowBox col-12 col-md-6 col-lg-3 p-2">
-                        <div id="divBox" class="card mt-3 border-primary" style="height: 530px; border-width: 3px;">
-                            <img style="height: 300px;" src="${(value.Poster == "N/A") ? 'https://images.unsplash.com/photo-1460881680858-30d872d5b530?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80' : value.Poster}" class="card-img-top" alt="Poster>
+                        <div id="divBox" class="card mt-3 border-primary" style="height: 580px; border-width: 3px;">
+                            <img id="searchMoviePoster" style="height: 350px;" src="${(value.Poster == "N/A") ? 'https://images.unsplash.com/photo-1460881680858-30d872d5b530?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80' : value.Poster}" class="card-img-top" alt="Poster>
                             <div class="card-body">
                                 <h6 id="cardh" class="card-title my-1"><b>${value.Title}</b></h6>
                                 <p class="card-text my-1"><b>Year : </b>${value.Year}</p>
@@ -120,8 +120,8 @@ function favorite(imdbID) {
 
             $("#favoriteMovieList").append(
                 `<div id = "${data.imdbID}" class="rowBox col-12 col-md-6 col-lg-3 p-2">
-                    <div id="divBox"  class="card mt-3 border-primary" style="height: 530px; border-width: 3px;">
-                        <img id="imgFavoritePoster" style="height: 300px;" src="${(data.Poster == "N/A") ? 'https://images.unsplash.com/photo-1460881680858-30d872d5b530?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80' : data.Poster}" class="card-img-top" alt="Poster>
+                    <div id="divBox"  class="card mt-3 border-primary" style="height: 580px; border-width: 3px;">
+                        <img id="imgFavoritePoster" style="height: 350px;" src="${(data.Poster == "N/A") ? 'https://images.unsplash.com/photo-1460881680858-30d872d5b530?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80' : data.Poster}" class="card-img-top" alt="Poster>
                         <div class="card-body">
                             <h6 id="cardFavoriteTitle" class="card-title my-1"><b>${data.Title}</b></h6>
                             <p id="cardFavoriteYear" class="card-text my-1"><b>Year : </b>${data.Year}</p>

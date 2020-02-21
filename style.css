@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    background: url('cinema.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+#keyword {
+    width: 350px;
+}
+
+
+/* append div css grid */
+#divBox {
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+/* For Film Title */
+#cardh {
+    white-space: nowrap;       
+    /* alt satıra hiç inme */
+
+    overflow: hidden;          
+    /* taşanları gizle   "overflow"-Wert darf nicht "visible" sein */
+
+    text-overflow: ellipsis;
+    /* eğer uzunsa üç nokta koy */
+
+    line-height: 25px;
+}
+
+
+#divBox:hover {
+    transform: scale(1.03);
+    /* üzerine gelince yazı boyutunun 1.03 katı olsun */
+    
+    text-shadow: 1px 1px 8px rgb(10, 93, 170);
+    transition: scale 2s linear;
+    /* border: 2px solid black; */
+} 
+
+.btn:hover {
+    /* border: 2px solid black; */
+    /* background-color: #0f4c75; */
+    /* font-weight: 600; */
+    transform: scale(1.08);
+    /* bu fontun 1.2 katı kadar büyüt demek */
+}
+
+.far {
+    font-size: 20px;
+}
+
+.fa {
+    font-size: 50px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .fa:hover {
+    color: darkblue;
+  }

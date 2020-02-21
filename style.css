@@ -26,8 +26,23 @@ body{
     border-radius: 1rem;
 }
 
+#filmPoster {
+    width: 75%;
+    margin-bottom: 1rem;
+    border: 3px solid lightblue;
+    border-radius: 1rem;
+}
+
+#searchMoviePoster, #imgFavoritePoster {
+    margin-bottom: 0.2rem;
+    border: 3px solid lightblue;
+    border-radius: 1rem;
+    padding-top: 0;
+    margin-top: 0;
+}
+
 /* For Film Title */
-#cardh {
+#cardh, #cardFavoriteTitle {
     white-space: nowrap;       
     /* alt satıra hiç inme */
 
@@ -38,6 +53,11 @@ body{
     /* eğer uzunsa üç nokta koy */
 
     line-height: 25px;
+}
+
+/* details table th */
+.modal div table tr th{
+    width: 8rem;
 }
 
 

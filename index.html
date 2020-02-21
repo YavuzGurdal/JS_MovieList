@@ -23,6 +23,7 @@
   <a class="navbar-brand">YVZ FİLM</a>
   <form class="form-inline" autocomplete = "off">
     <input id="keyword" type="text" class="form-control" placeholder="Please Write The Movie Name..." aria-label="Recipient's username" aria-describedby="button-addon2">
+    <input id="keyword" style="display: none;" type="text" class="form-control" placeholder="Please Write The Movie Name..." aria-label="Recipient's username" aria-describedby="button-addon2">
     <button onclick="searchMovie()" style="width: 7rem;" class="btn btn-outline-light text-white bg-danger mx-2" type="button" id="button-addon2">Search</button>
     <button onclick="showMovieList()" style="width: 7rem;" class="btn btn-outline-light text-white bg-danger" type="button" id="button-addon2"><i class="far fa-heart"></i></button>
   </form>
@@ -58,34 +59,50 @@
         </button>
       </div>
       <div class="modal-body">
-        <img id="filmPoster" style="padding-top: 0.2rem; padding-bottom: 1rem;" width="70%" src="" alt="image is loading. If takes more than seconds, please contact with support">
-
-        <h5>Genre</h5>
-        <p id="genre"></p>
-
-        <h5>Release Time</h5>
-        <p id="releaseTime"></p>
-
-        <h5>Country</h5>
-        <p id="country"></p>
-
-        <h5>Lenguage</h5>
-        <p id="lenguage"></p>
-
-        <h5>imdb Rating</h5>
-        <p id="imdbRating"></p>
-
-        <h5>Run Time</h5>
-        <p id="runTime"></p>
+        <div style="text-align:center">
+           <img id="filmPoster" src="" alt="image is loading. If takes more than seconds, please contact with support">
+        </div>
         
-        <h5>Director</h5>
-        <p id="director"></p>       
-
-        <h5>Actors</h5>
-        <p id="actors"></p>
-
-        <h5>Plot</h5>
-        <p id="plot"></p>
+        <table class="table table-hover">
+          <tbody>
+            <tr>
+              <th scope="row">Genre</th>
+              <td id="genre">Genre</td>
+            </tr>
+            <tr>
+              <th scope="row">Release Time</th>
+              <td id="releaseTime">Release Time</td>
+            </tr>
+            <tr>
+              <th scope="row">Country</th>
+              <td id="country">Country</td>
+            </tr>
+            <tr>
+              <th scope="row">Lenguage</th>
+              <td id="lenguage">Lenguage</td>
+            </tr>
+            <tr>
+              <th scope="row">imdb Rating</th>
+              <td id="imdbRating">imdb Rating</td>
+            </tr>
+            <tr>
+              <th scope="row">Run Time</th>
+              <td id="runTime">Run Time</td>
+            </tr>
+            <tr>
+              <th scope="row">Director</th>
+              <td id="director">Director</td>
+            </tr>
+            <tr>
+              <th scope="row">Actors</th>
+              <td id="actors">Actors</td>
+            </tr>
+            <tr>
+              <th scope="row">Plot</th>
+              <td id="plot">Plot</td>
+            </tr>
+          </tbody>
+        </table>
 
       </div>
       <div class="modal-footer">

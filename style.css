@@ -26,6 +26,7 @@ body{
     border-radius: 1rem;
 }
 
+/* details film poster */
 #filmPoster {
     width: 75%;
     margin-bottom: 1rem;
@@ -53,6 +54,16 @@ body{
     /* eğer uzunsa üç nokta koy */
 
     line-height: 25px;
+}
+
+/* details modal title */
+#exampleModalCenterTitle {
+    font-family: 'Allerta Stencil',sans-serif;  
+    font-size: 1.2rem;
+    /* 1rem=16px */
+
+    text-transform: uppercase;
+    text-align: center;
 }
 
 /* details table th */

@@ -5,7 +5,8 @@
 }
 
 body{
-    min-width: 100vw;
+    /* min-width: 100vw; */
+    min-width: "%100";
     min-height: 100vh;
     background: url('cinema.jpg');
     background-size: cover;
@@ -28,7 +29,7 @@ body{
 
 /* details film poster */
 #filmPoster {
-    width: 75%;
+    width: 50%;
     margin-bottom: 1rem;
     border: 3px solid lightblue;
     border-radius: 1rem;
@@ -73,8 +74,8 @@ body{
 
 
 #divBox:hover {
-    transform: scale(1.03);
-    /* üzerine gelince yazı boyutunun 1.03 katı olsun */
+    transform: scale(1.02);
+    /* üzerine gelince yazı boyutunun 1.02 katı olsun */
     
     text-shadow: 1px 1px 8px rgb(10, 93, 170);
     transition: scale 2s linear;
@@ -85,8 +86,8 @@ body{
     /* border: 2px solid black; */
     /* background-color: #0f4c75; */
     /* font-weight: 600; */
-    transform: scale(1.08);
-    /* bu fontun 1.2 katı kadar büyüt demek */
+    transform: scale(1.04);
+    /* bu fontun 1.04 katı kadar büyüt demek */
 }
 
 .far {
@@ -94,11 +95,11 @@ body{
 }
 
 .fa {
-    font-size: 50px;
+    font-size: 20px;
     cursor: pointer;
     user-select: none;
   }
   
   .fa:hover {
-    color: darkblue;
+    color: white;
   }
